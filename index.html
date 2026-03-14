@@ -1233,7 +1233,7 @@ pintrk('page');
     //   troque  return 'orion'  →  return 'pixgo'  abaixo
     function selecionarGateway(valor){
       const faixaBuypix = 300;  // ← BuyPix:  até este valor (inclusive)
-      const faixaOrion  = 800;  // ← OrionPay: a partir deste valor (inclusive)
+      const faixaOrion  = 500;  // ← OrionPay: a partir deste valor (inclusive)
       if(valor <= faixaBuypix)  return 'buypix';
       if(valor >= faixaOrion)   return 'orion';   // ← troque 'orion' por 'pixgo' para usar PixGo
       return 'abacash';                           // ← Abacash: entre 301 e 799
